@@ -32,23 +32,31 @@ if __name__ == '__main__':
     my_numbers = [3, 4, 5, 6, 7, 8]
     q = multiprocessing.Queue()
     parent_conn, child_conn = Pipe()
+
     p1 = Process(target=display, args=('Martin',))
+    print('p1')
     p2 = Process(target=cube, args=(my_numbers,))
     p3 = Process(target=even_nr, args=(my_numbers,))
     p4 = Process(target=myfunction, args=(child_conn,))
     p5 = Process(target=even_nr, args=(range(10), q))
 
     p1.start()
+    print('p1 start')
     p2.start()
+    
+    p1.join()
+    print('p1 join')
+
     p3.start()
     p4.start()
     p5.start()
+    
+    p4.join()
 
-    p1.join()
     p2.join()
     p3.join()
-    p4.join()
     p5.join()
+    
     print(parent_conn.recv())
     while not q.empty():
         print(q.get())

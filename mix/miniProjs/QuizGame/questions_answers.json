@@ -1,0 +1,16 @@
+{
+    "quiz": {
+        "question": [
+            "What does CPU stand for?",
+            "What does GPU stand for?",
+            "What does RAM stand for?",
+            "What does PSU stand for?"
+        ],
+        "answer": [
+            "computer processing unit",
+            "graphics processing unit",
+            "random access memory",
+            "power supply unit"
+        ]
+    }
+}
