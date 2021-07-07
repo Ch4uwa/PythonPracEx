@@ -1,12 +1,6 @@
-"""Find and return three largest numbers in array.
-
-Size of array is min: 3
-"""
-from random import randint
-
-
-"""Create test array."""
-array_in = [randint(-1000, 1000) for _ in range(3, randint(3, 14))]
+"""Find and returns three largest numbers in array."""
+import MakeArray
+array_in = MakeArray.makeArray()
 
 
 def three_largest(array_1):
