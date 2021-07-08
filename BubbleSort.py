@@ -1,11 +1,11 @@
-"""Bubblesort."""
+"""BubbleSort."""
 import MakeArray
 
 my_array = MakeArray.makeArray()
 
 
 def bubbleSort(array):
-    """Sort array by comparing left > right, swap place if true."""
+    """Sort array by comparing left > right. Swap place if true."""
     isSorted = False
     counter = 0
     while not isSorted:
