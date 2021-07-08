@@ -23,5 +23,5 @@ def getMissing(nums):
 if __name__ == '__main__':
     print(f'Missing number: {getMissing(nums)}')
     print(f'Duplicate number: {getDuplicates(nums)}')
-    print(
-        f'Sum of missing and duplicate: {getMissing(nums) + getDuplicates(nums)}')
+    print(f'Sum of missing and duplicate:'
+          f' {getMissing(nums) + getDuplicates(nums)}')

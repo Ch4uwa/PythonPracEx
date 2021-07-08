@@ -43,20 +43,20 @@ if __name__ == '__main__':
     p1.start()
     print('p1 start')
     p2.start()
-    
+
     p1.join()
     print('p1 join')
 
     p3.start()
     p4.start()
     p5.start()
-    
+
     p4.join()
 
     p2.join()
     p3.join()
     p5.join()
-    
+
     print(parent_conn.recv())
     while not q.empty():
         print(q.get())

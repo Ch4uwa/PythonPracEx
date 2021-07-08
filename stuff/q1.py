@@ -10,4 +10,6 @@ def twoNumberSum(array, targetSum):
                 if temp == targetSum:
                     return [array[i] + array[j]]
     return []
+
+
 print(twoNumberSum(array, targetSum))

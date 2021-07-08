@@ -6,6 +6,7 @@ def generator_thr_iter():
     yield 34.2
     yield 'This is a string'
 
+
 def num_gen(n):
     num = 1
     while True:
@@ -14,6 +15,7 @@ def num_gen(n):
             return
         else:
             num += 1
+
 
 for i in num_gen(200000):
     print(i*i)
@@ -25,4 +27,3 @@ for i in g_iter:
 # print(g_iter.__next__())
 # print(g_iter.__next__())
 # print(g_iter.__next__())
-

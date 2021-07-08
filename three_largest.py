@@ -1,6 +1,6 @@
 """Find and returns three largest numbers in array."""
-import MakeArray
-array_in = MakeArray.makeArray()
+from makearray import make_array
+array_in = make_array()
 
 
 def three_largest(array_1):

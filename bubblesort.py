@@ -1,7 +1,7 @@
 """BubbleSort."""
-import MakeArray
+import makearray
 
-my_array = MakeArray.makeArray()
+my_array = makearray.make_array()
 
 
 def bubbleSort(array):

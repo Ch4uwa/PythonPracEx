@@ -6,9 +6,9 @@ Size of array is min: 3 max: 13
 from random import randint
 
 
-def makeArray():
+def make_array():
     """Create an list/array with random length and numbers.
-    
+
     length is 3 -- 13
     numbers is -1000 -- 1000
 
