@@ -6,7 +6,7 @@ competitions = [
 results = [0, 0, 1]
 
 
-def tournamentWinner(competitions, results):
+def tournament_winner(competitions, results):
     curBestTeam = ""
     scores = {curBestTeam: 0}
 
@@ -16,7 +16,7 @@ def tournamentWinner(competitions, results):
 
         winTeam = homeTeam if result == 1 else awayTeam
 
-        updateScore(winTeam, 3, scores)
+        update_score(winTeam, 3, scores)
 
         if scores[winTeam] > scores[curBestTeam]:
             curBestTeam = winTeam
@@ -24,11 +24,11 @@ def tournamentWinner(competitions, results):
     return curBestTeam
 
 
-def updateScore(team, points, scores):
+def update_score(team, points, scores):
     if team not in scores:
         scores[team] = 0
 
     scores[team] += points
 
 
-print(tournamentWinner(competitions, results))
+print(tournament_winner(competitions, results))

@@ -7,7 +7,7 @@ def generator_thr_iter():
     yield 'This is a string'
 
 
-def num_gen(n):
+def um_gen(n):
     num = 1
     while True:
         yield num
@@ -17,12 +17,13 @@ def num_gen(n):
             num += 1
 
 
-for i in num_gen(200000):
-    print(i*i)
+if __name__ == '__main__':
+    for i in num_gen(200000):
+        print(i*i)
 
-g_iter = generator_thr_iter()
-for i in g_iter:
-    print(1, i)
+    g_iter = generator_thr_iter()
+    for i in g_iter:
+        print(1, i)
 
 # print(g_iter.__next__())
 # print(g_iter.__next__())

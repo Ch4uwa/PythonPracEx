@@ -1,1 +1,3 @@
-# Some Random exercises stuff
+# Some python exercises stuff
+
+Simple python exercise

@@ -2,7 +2,7 @@
 coins = [1, 2, 5]
 
 
-def nonConstructibleChange(coins):
+def non_constructible_change(coins):
     minSumNotPossible = 0
 
     if len(coins) == 0:
@@ -19,4 +19,4 @@ def nonConstructibleChange(coins):
     return minSumNotPossible + 1
 
 
-print(nonConstructibleChange(coins))
+print(non_constructible_change(coins))
